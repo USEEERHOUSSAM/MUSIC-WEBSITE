@@ -1,80 +1,122 @@
-# MUSIC-WEBSITE
-YOU OUT THE WORLD WITH THIS SITEWEB
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-        body {
-          background-color: hwb(118 8% 46% / 0.774);
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-      </style>
-    <meta charset="UTF-8">
-    <title>Music Website</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1 style="font-size: 90px;">Music Website</h1>
-    </header>
-
-    <main>
-      <section id="hero">
-        <h2 style="font-size: 90px;color: rgb(73, 75, 72);">Welcome to our Music Website!</h2>
-        <p style="font-size: 60px;colo">Discover new artists, albums, and playlists.</p>
-      <section id="artists">
-        <h2 style="font-size: 40px;">best artists</h2>
-    <h3 STYLE="font-size: 30px;">Artist 1</h3>
-        <div class="artist"></div>
-          <img src="houssam/تنزيل.jpeg" alt="Artist 1">
-          <h3>DIZZY DROSS</h3>
-          <p style="color: #000805;font-style: normal ;font-size: 30px;">THIS IS THE BES ARTIST IN MOROCCO</p>
-          <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO34P9Yc?si=531395d8d0c74970"><button>Start Listening</button></a>
-        </div>
-        <div class="artist">
-            <h1 style="font-size: 30px;">
-                Artist 2
-            </h1>
-          <img src="houssam/تنزيل (2).jpeg" alt="Artist 2">
-          <h3>ELGRANDE TOTO</h3>
-          <p style="color: #000805;font-style: normal ;font-size: 30px;">Most viewrs</p>
-          <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2HpNPX?si=9ae79be8ef03409c"><button>Start Listening</button></a>
-        </div>
-        <h1 style=" font-size: 30px;">Artist 3</h1>
-        <div class="artist">
-          <img src="houssam/تنزيل (3).jpeg" alt="Artist 3">
-          <h3>DON BIG</h3>
-          <p style="color: #000805;font-style: normal ;font-size: 30px;">old artist</p>
-          <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2v1e8N?si=c1629b6b703e4489"><button>Start Listening</button></a>
-    
-        </div>
-       <body>
-        <!-- 
-      </section>
-      <section id="albums">
-        <h2>Featured Albums</h2>
-        <div class="album">
-          <img src="https://via.placeholder.com/150" alt="Album 1">
-          <h3>Album 1</h3>
-          <p>By Artist 1</p>
-        </div>
-        <div class="album">
-          <img src="https://via.placeholder.com/150" alt="Album 2">
-          <h3>Album 2</h3>
-          <p>By Artist 2</p>
-        </div>
-        <div class="album">
-          <img src="https://via.placeholder.com/150" alt="Album 3">
-          <h3>Album 3</h3>
-          <p>By Artist 3</p>
-        </div>
-      </section>
-      <section id="playlists">
-        <h2>Featured Playlists</h2>
-        <div class="playlist">
-          <img src="fgdfgdd" alt="Playlist 1">
-          <h3>Playlist 1</h3>
-          <p>Lorem ipsum dolor
-            -->
-        </body>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  header, nav, main, section, footer {
+    display: block;
+  }
+  
+  header {
+    background-color: #1E90FF;
+    color: #FFF;
+    padding: 10px;
+  }
+  
+  nav {
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #CCC;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #1E90FF;
+    color: #FFF;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #hero {
+    background-image: url("https://via.placeholder.com/800x400");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #hero h2 {
+    font-size: 40px;
+    color: #FFF;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 20px;
+    color: #FFF;
+    margin-bottom: 20px;
+  }
+  
+  #hero button {
+    background-color: #1E90FF;
+    color: #FFF;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #hero button:hover {
+    background-color: #FFF;
+    color: #1E90FF;
+  }
+  
+  #artists, #albums, #playlists {
+    margin-top: 50px;
+  }
+  
+  .artist, .album, .playlist {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 200px;
+    border: 1px solid #CCC;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .artist img, .album img, .playlist img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+  }
+  
+  .artist h3, .album h3, .playlist h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .artist p, .album p, .playlist p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
